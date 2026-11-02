@@ -1,0 +1,20 @@
+==================================
+  MODÈLE LOGIQUE DES DONNÉES (MLD)
+  Application : Gestion de Stock
+==================================
+
+Table : Couverture
+------------------
+- id_couverture (Clé Primaire)
+- nom (Texte)
+- type (Texte)
+- quantite_stock (Nombre entier)
+- emplacement (Texte)
+
+Table : Mouvement
+-----------------
+- id_mouvement (Clé Primaire)
+- id_couverture (Clé Étrangère vers Couverture)
+- type_mouvement (Entrée / Sortie)
+- quantite (Nombre entier)
+- date_mouvement (Date/Heure)
